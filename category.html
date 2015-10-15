@@ -1,0 +1,13 @@
+---
+layout: default
+permalink: /category/
+---
+
+<div class="container">
+  <h1>this is a category page shows only category links</h1>
+  {% for post in site.categories.cat %}
+    <h2> {{post.title}} </h2>
+    {{post.content}}
+    {% endfor %}
+
+</div>
